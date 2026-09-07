@@ -2,47 +2,33 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <!-- Configuración del viewport vital para el diseño responsive (30 pts en CSS) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Credencial Digital | [Tu Nombre]</title>
-    <!-- Enlace al archivo CSS externo mediante ruta relativa -->
-    <link rel="stylesheet" href="css/style.css">
+    <title>TP1 - Credencial Digital</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Contenedor principal que agrupa todo -->
-    <main class="contenedor-principal">
-        
-        <!-- Tarjeta/Afiche en sí mismo -->
+    <main>
+        <!-- article porque la credencial es contenido autocontenido y con sentido propio -->
         <article class="credencial">
             
-            <!-- Encabezado con imagen y título principal -->
-            <header class="credencial-header">
-                <img src="img/avatar.jpg" alt="Ilustración de perfil de [Tu Nombre]" class="avatar">
-                <h1>Tu Nombre</h1>
-            </header>
+            <img src="assets/foto.jpg" alt="Avatar del estudiante" class="foto">
 
-            <!-- Sección de información descriptiva -->
-            <section class="credencial-info">
-                <p>Estudiante de diseño y desarrollo web. Buscando siempre la intersección entre la estética y el código.</p>
-                <ul>
-                    <li><strong>Rol:</strong> Desarrollador Web</li>
-                    <li><strong>Intereses:</strong> UI/UX, Tipografía, Arte Digital</li>
-                    <li><strong>Frase:</strong> "Menos es más"</li>
-                </ul>
-            </section>
+            <h1>Brenda Santilli</h1>
 
-            <!-- Pie de la tarjeta con el enlace solicitado -->
-            <footer class="credencial-footer">
-                <!-- Se usa target="_blank" para abrir en otra pestaña -->
-                <a href="https://github.com/tu-usuario" class="btn-enlace" target="_blank" rel="noopener noreferrer">
-                    Visitar mi Portfolio
-                </a>
-            </footer>
+            <p class="subtitle">Estudiante de Diseño Multimedial</p>
+            
+            <ul class="intereses">
+                <li>Hago visuales y escaneo cosas en la calle</li>
+                <li>Roles de interés: Interacción, Arquigrafía y Sonido</li>
+                <li>Un género musical: R&B</li>
+            </ul>
 
+            <a href="https://www.instagram.com/brndism" target="_blank" class="btn-ig">Ver Instagram</a>
+            
         </article>
-
     </main>
 
 </body>
 </html>
+
