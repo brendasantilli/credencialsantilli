@@ -1,91 +1,66 @@
-/* =========================================
-   1. IMPORTACIÓN DE FUENTES
-   ========================================= */
-/* Importamos la fuente 'Inter' de Google Fonts para un look minimalista y moderno */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
-
-/* =========================================
-   2. RESETEO Y BASE
-   ========================================= */
 * {
     margin: 0;
     padding: 0;
-    /* Fundamental para que el padding y border no sumen ancho extra al modelo de caja */
     box-sizing: border-box; 
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    /* Colores de fondo con buen contraste para destacar la tarjeta */
-    background-color: #E2E8F0; 
-    color: #1E293B;
-    
-    /* Configuración para centrar en pantalla completa sin scroll */
+    background-color: #f3f4eb; 
+    color: #252a00;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* =========================================
-   3. TARJETA / CREDENCIAL (Modelo de caja)
-   ========================================= */
 .credencial {
-    background-color: #FFFFFF;
-    
-    /* Padding interno evidente para darle aire al contenido */
+    background-color: #F4FAEA;
     padding: 40px; 
-    
-    /* Ancho fijo para pantallas grandes, se pisa en responsive */
-    width: 400px;
-    
-    /* Bordes y sombras sutiles para despegar la tarjeta del fondo */
-    border: 1px solid #CBD5E1;
+    width: 500px;
+    border: 1px solid #d6e1cb;
     border-radius: 16px;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
-    
-    /* Centramos el texto interior */
     text-align: center;
 }
 
-/* =========================================
-   4. ELEMENTOS INTERNOS
-   ========================================= */
 .foto {
     width: 120px;
     height: 120px;
-    border-radius: 50%; /* Lo hace circular */
+    border-radius: 50%; /* circular */
     object-fit: cover;
     margin-bottom: 20px;
-    /* Un pequeño borde para destacar la imagen */
+    /* borde para destacar la imagen */
     border: 3px solid #E2E8F0; 
 }
 
 h1 {
-    font-size: 1.8rem;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-size: 2.8rem;
     font-weight: 600;
+    color: #73A928;
     margin-bottom: 5px;
 }
 
-.subtitle {
+.h2 {
+    font-family: "Roboto", sans-serif;
     font-size: 0.95rem;
-    color: #64748B;
+    color: #2e2710;
     margin-bottom: 25px;
 }
 
 .intereses {
-    list-style: none; /* Quitamos las viñetas por defecto */
+    list-style: none;
     margin-bottom: 30px;
-    text-align: left; /* Alineamos la lista a la izquierda para mejor lectura */
+    text-align: center;
     background-color: #F8FAFC;
     padding: 15px 20px;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .intereses li {
-    font-size: 0.9rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.05rem;
     padding: 8px 0;
-    border-bottom: 1px solid #E2E8F0;
 }
 
 /* Quitamos la línea del último elemento de la lista */
@@ -93,35 +68,26 @@ h1 {
     border-bottom: none;
 }
 
-/* =========================================
-   5. BOTÓN (Enlace) Y EFECTOS
-   ========================================= */
-.btn-ig {
+.boton-ig {
     display: inline-block;
-    background-color: #0F172A;
+    background-color: #73A928;
     color: #FFFFFF;
     text-decoration: none; /* Quitamos el subrayado del link */
     padding: 12px 28px;
     border-radius: 8px;
-    font-weight: 600;
-    font-size: 0.95rem;
-    /* Transición suave para el estado hover */
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-size: 0.90rem;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.btn-ig:hover {
-    background-color: #334155; /* Cambio de color */
-    transform: translateY(-2px); /* Ligero desplazamiento hacia arriba */
+.boton-ig:hover {
+    background-color: #5a8c1f;
+    transform: translateY(-2px);
 }
 
-/* =========================================
-   6. RESPONSIVE DESIGN (Mobile)
-   ========================================= */
 @media (max-width: 480px) {
     .credencial {
-        /* En celulares, ocupa el 90% del ancho para no pegar a los bordes */
         width: 90%;
-        /* Reducimos un poco el padding en móviles */
         padding: 30px 20px; 
     }
 }
